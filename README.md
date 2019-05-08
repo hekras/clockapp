@@ -27,17 +27,18 @@ Make sure JRE1.8.0_191 or later is installed
   * open browser and enter "[hostname]:8000/gettimeclient". result: the client pops up
 ```
 ### Distribution:
-   clockapp.jar contains everything needed
-   
+```
+   clockapp.jar contains everything needed, copy this file to a new folder on the server
+```   
 ### Start the server:
 ```
    cd to the folder where clockapp.jar is copied to
-   java -jar clockapp.jar (in cmd or terminal)
+   java -jar clockapp.jar
 ```
 
 ### Stop the server
 ```
-goto the the cmd or termail window and press Ctrl+C
+goto the the cmd or terminal window and press Ctrl+C
 ```
 
 ## Documentation:
