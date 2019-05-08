@@ -31,7 +31,7 @@ Make sure JRE1.8.0_191 or later is installed
    
 ### Start the server:
 ```
-   cd to the folder where clockapp.jar
+   cd to the folder where clockapp.jar is copied to
    java -jar clockapp.jar (in cmd or terminal)
 ```
 
