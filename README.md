@@ -15,6 +15,7 @@ Manifest.txt       | a manifest needed to build a new clockapp.jar
 Make sure JRE1.8.0_191 or later is installed
 
 ### Recompile and build new clockapp.jar:
+```
 1. start cmd.exe (windows) or termial (Ubuntu)
 2. copy all files to a new folder called clockapp
 3. cd <to clockapp folder>
@@ -24,7 +25,7 @@ Make sure JRE1.8.0_191 or later is installed
 7. test the server with "java -jar clockapp.jar", if everything is ok "Server started..." is displayed
   * open browser and enter "[hostname]:8000/gettime". result: a base64 encoded string should be returned
   * open browser and enter "[hostname]:8000/gettimeclient". result: the client pops up
-
+```
 ### Distribution:
    clockapp.jar contains everything needed
    
