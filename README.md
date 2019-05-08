@@ -1,15 +1,18 @@
-Files:
+# clockapp
+
+# Files:
 Readme.txt         - this file
+clockapp.jar       - distributable file, compiled with JDK11
 calendar.php       - Reply to Assingment 1, PHP script that renders a calendar GUI
 Clockapp.java      - Reply to Assingment 2 - server, java source code
 gettimeclient.html - Reply to Assingment 2 - client, client in html/JavaScript, 
 Manifest.txt       - a manifest needed to build a new clockapp.jar
 
 
-Distribution to servers:
+# Distribution to servers:
 Make sure JRE1.8.0_191 or later is installed
 
-Recompile and build new clockapp.jar:
+# Recompile and build new clockapp.jar:
 1. start cmd.exe (windows) or termial (Ubuntu)
 2. copy all files to a new folder called clockapp
 3. cd <to clockapp folder>
@@ -20,20 +23,20 @@ Recompile and build new clockapp.jar:
 7a. open browser and enter "[hostname]:8000/gettime". result: a base64 encoded string should be returned
 7b. open browser and enter "[hostname]:8000/gettimeclient". result: the client pops up
 
-Distribution:
+# Distribution:
    clockapp.jar contains everything needed
    
-Start the server:
+# Start the server:
    cd <to the folder where clockapp.jar>
    java -jar clockapp.jar (in cmd or terminal)
 
-Stop the server
+# Stop the server
    goto the the cmd or termail window and press Ctrl+C
 
 
-Documentation:
+# Documentation:
 
-REST API:
+# REST API:
     HTTP Method | URI                                     | Action
     ------------+-----------------------------------------+-------------------------------------------------------
       GET       | http://[hostname]:8000/requestime       | returns JSON with servertime in Base64 coded format
@@ -43,7 +46,7 @@ REST API:
     ------------+-----------------------------------------+-------------------------------------------------------
 
 
-Logfile on the server:
+# Logfile on the server:
 If any request are made to the server, they will be logged in a file in same folder
 the name of the logfile is "clockserver-20190508-101112-123.log
 the logfile name is gennerated each time the server starts
@@ -52,13 +55,13 @@ each logentry is started with a timestamp in the format mm/dd/yyyy hh:MM:ss:SSS
 where mm = month, dd = day, yyyy = year, hh = hours, MM = minutes, ss = seconds and SSS = milliseconds
 
 
-Clockapp.java:
+# Clockapp.java:
 No webserver as apache, Tomcat or jetty is needed.
 Default port on the httpserver is 8000, this can be changed by edting this line:
             HttpServer server = HttpServer.create(new InetSocketAddress(8000), 0);
 
 
-gettimeclient.html:
+# gettimeclient.html:
 The client only request time from the server when the button "Get server time" is pressed
 the request is done with ajax
 If the request is ok, the encoded and decoded values are displayed and a log entry is made on the same page
