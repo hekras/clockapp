@@ -27,7 +27,7 @@ Make sure JRE1.8.0_191 or later is installed
    clockapp.jar contains everything needed
    
 # Start the server:
-   cd <to the folder where clockapp.jar>
+   cd to the folder where clockapp.jar
    java -jar clockapp.jar (in cmd or terminal)
 
 # Stop the server
