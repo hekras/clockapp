@@ -66,7 +66,7 @@ where mm = month, dd = day, yyyy = year, hh = hours, MM = minutes, ss = seconds 
 ### Clockapp.java:
 ```
 No webserver as apache, Tomcat or jetty is needed.
-Default port on the httpserver is 8000, this can be changed by edting this line:
+Default port on the httpserver is 8000, this can be changed by edting the following line in Clockapp.java:
             HttpServer server = HttpServer.create(new InetSocketAddress(8000), 0);
 ```
 
