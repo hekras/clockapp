@@ -12,7 +12,7 @@ Manifest.txt       | a manifest needed to build a new clockapp.jar
 
 
 ### Distribution to servers:
-Make sure JRE1.8.0_191 or later is installed
+cloackapp.jar is the distributable file. It is compiled with OpenJDK 11, you may need to recompile a new clockapp for the version you need. JDK Version 8.211 or higher is needed.
 
 ### Recompile and build new clockapp.jar:
 ```
