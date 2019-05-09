@@ -23,8 +23,8 @@ Make sure JRE1.8.0_191 or later is installed
 5. jar cfm clockapp.jar Manifest.txt *.class gettimeclient.html
 6. (optional) delete the *.class files
 7. test the server with "java -jar clockapp.jar", if everything is ok "Server started..." is displayed
-  * open browser and enter "[hostname]:8000/gettime". result: a base64 encoded string should be returned
-  * open browser and enter "[hostname]:8000/gettimeclient". result: the client pops up
+  * open browser and enter "[hostname]:8000/requesttime". result: a base64 encoded string should be returned
+  * open browser and enter "[hostname]:8000/requesttimeclient". result: the client pops up
 ```
 ### Distribution:
 ```
@@ -46,10 +46,10 @@ goto the the cmd or terminal window and press Ctrl+C
 ### REST API:
     HTTP Method | URI                                     | Action
     ------------+-----------------------------------------+-------------------------------------------------------
-      GET       | http://[hostname]:8000/gettime          | returns JSON with servertime in Base64 coded format
+      GET       | http://[hostname]:8000/requesttime      | returns JSON with servertime in Base64 coded format
                 |                                         | Example "fdu7fyayfadsfdfsadiuyfy98eyfd98dsf=="
     ------------+-----------------------------------------+-------------------------------------------------------
-      GET       | http://[hostname]:8000/gettimeclient    | returns the gettimeclient.html 
+      GET       | http://[hostname]:8000/requesttimeclient| returns the gettimeclient.html 
     ------------+-----------------------------------------+-------------------------------------------------------
 
 
