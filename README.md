@@ -47,7 +47,7 @@ goto the the cmd or terminal window and press Ctrl+C
     HTTP Method | URI                                     | Action
     ------------+-----------------------------------------+-------------------------------------------------------
       GET       | http://[hostname]:8000/gettime          | returns JSON with servertime in Base64 coded format
-                |                                         | JSON example {"value": "fdu7fyayfdiuyfy98eyfd98dsf=="}
+                |                                         | Example "fdu7fyayfadsfdfsadiuyfy98eyfd98dsf=="
     ------------+-----------------------------------------+-------------------------------------------------------
       GET       | http://[hostname]:8000/gettimeclient    | returns the gettimeclient.html 
     ------------+-----------------------------------------+-------------------------------------------------------
